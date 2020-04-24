@@ -1,0 +1,53 @@
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.photo-list .photo-list-item {
+    height: 200px;
+    width: 295px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 20px;
+    animation-name: animate;
+    animation-duration: 2s;
+    overflow: hidden;
+    position: relative;
+}
+.photo-list .photo-list-item .thumb img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.photo-list-item .user-avtar {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+.photo-list-item .user-avtar .icon {
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+}
+.photo-list-item .user-avtar .user-desc {
+    font-size: 12px;
+    font-weight: 500;
+}
+.photo-list-item .user-avtar .user-desc .drkcolor {
+    color: #00bfb9;
+    margin-left: 2px;
+    text-transform: capitalize;
+}
+
+@keyframes animate {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+  }

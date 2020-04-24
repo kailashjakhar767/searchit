@@ -1,0 +1,86 @@
+.popup-wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-wrapper .popup {
+    width: 80%;
+    max-width: 700px;
+    /* height: 550px; */
+    /* max-height: 500px; */
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 20px; 
+    box-sizing: border-box;
+}
+
+.popup .popup-close {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+.popup .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.popup .user-info .icon {
+    height: 36px;
+    width: 36px;
+}
+.popup .user-info .user-social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.user-social .name{
+    font-weight: bold;
+}
+.user-social .userid {
+    color: #666;
+    font-size: 12px;
+}
+
+.popup .image-preview {
+    
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.popup .download-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.popup .download-btn .btn {
+    padding: 15px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #00bfb9;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.popup .loading-bar {
+    text-align: center;
+}

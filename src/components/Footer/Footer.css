@@ -1,0 +1,34 @@
+.footer-wrapper {
+    background-color: #1a1d24;
+    /* width: 100%; */
+    padding: 70px;
+}
+
+.footer-wrapper .footer-content  {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    max-width: 950px;
+}
+
+.footer-wrapper .popular-search {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+.footer-wrapper .popular-search .popular-item {
+    width: 30%;
+    margin-top: 10px;
+    color: #ffb000;
+    font-size: 13px;
+    font-weight: 500;
+}
+.footer-wrapper .logo-wrp {
+    width: 30%;
+}
+.footer-wrapper .head-text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
