@@ -44,6 +44,7 @@
 .user__desc--drkcolor {
     color: #00e2bd;
     margin-left: 2px;
+    letter-spacing: normal;
     text-transform: capitalize;
 }
 

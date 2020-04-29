@@ -15,7 +15,6 @@ export const Footer = (props) => {
                     <div className="popular-search">
                         {["Dog", "Office", "Digital", "Cat", "Coffee", "Meeting", "Space", "World", "Cars", "Nature", "Wildlife", "Games", "Business", "Beach trip", "Holiday"].map((item, index) =>
                             <Tag className="popular-item" key={item+index} content={item}/>
-                            // <div className="popular-item" key={item+index}>{item}</div>
                         )}
                     </div>
 
