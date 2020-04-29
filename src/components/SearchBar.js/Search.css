@@ -1,9 +1,7 @@
 
 /* Search Bar Style */
 
-.search-bar-wrapper {
-}
-.search-bar {
+.search__bar {
     padding: 5px;
     border-radius: 10px;
     background-color: #fff;
@@ -12,11 +10,11 @@
     display: flex;
     align-items: center;
 }
-.search-bar form {
+.search__bar form {
     width: 100%;
 }
-.search-bar input {
-    padding: 15px;
+.search__bar input {
+    padding: 14px;
     width: 100%;
     border: none;
     outline: none;
@@ -25,11 +23,11 @@
     font-weight: bold;
     color: #999;
 }
-.search-bar input::placeholder {
+.search__bar input::placeholder {
     color: #999;
   }
 
-  .search-bar .search-icon {
+  .search__bar .search-icon {
       right: -10px;
     position: absolute;
     background-color: #00bfb9;
@@ -40,7 +38,7 @@
     border: none;
     outline: none;
   }
-  .search-bar .search-icon::before {
+  .search__bar .search-icon::before {
       content: " ";
       height: 14px;
       width: 14px;
@@ -50,7 +48,7 @@
       border: 2px solid #fff;
       position: absolute;
   }
-  .search-bar .search-icon::after {
+  .search__bar .search-icon::after {
     content: " ";
     height: 2px;
     width: 10px;

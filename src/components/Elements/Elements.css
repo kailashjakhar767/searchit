@@ -12,6 +12,10 @@
     background-color: lightblue;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0 100%);
 }
+.banner-wrapper .banner img {
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Logo CSS */
 
@@ -56,10 +60,8 @@
     color: #ffb000;    
     display: block;
     font-size: inherit;
-    margin-left: 20px;
-}
-.tag-title-label {
-    font-weight: bold;
+    margin-left: 25px;
+    cursor: pointer;
 }
 
 

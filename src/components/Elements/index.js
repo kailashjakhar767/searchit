@@ -14,7 +14,6 @@ export const Banner = (props) => {
             <div className="banner-wrapper">
                 <div className="banner">
                 <img src={props.source} alt="" title="banner" width="100%" />
-
                 </div>
             </div>
         );

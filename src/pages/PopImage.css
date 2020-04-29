@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -12,70 +12,64 @@
 }
 
 .popup-wrapper .popup {
-    width: 80%;
-    max-width: 700px;
-    /* height: 550px; */
-    /* max-height: 500px; */
+    position: relative;
+    height: 100%;
+    max-width: 90vw;
+    max-height: 90vh;
     background-color: #fff;
     border-radius: 10px;
-    position: relative;
-    padding: 20px 20px; 
+    padding: 2% 3%;
     box-sizing: border-box;
 }
 
-.popup .popup-close {
+.popup .popup__close {
     position: absolute;
     right: -20px;
     top: -20px;
 }
 
-.popup .user-info {
+.userinfo {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
-.popup .user-info .icon {
+.userinfo__icon {
     height: 36px;
     width: 36px;
 }
-.popup .user-info .user-social {
+.userinfo__social {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
-.user-social .name{
+.social__name{
     font-weight: bold;
 }
-.user-social .userid {
+.social__userid {
     color: #666;
     font-size: 12px;
 }
 
-.popup .image-preview {
-    
-    height: 60vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.preview {
+    height: calc(100% - 113px);
+    margin: 20px 0;
 }
-.image-preview img {
-    width: 100%;
+.preview__img {
+    /* width: 100%; */
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
-.popup .download-btn {
+.download-btn {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
-.popup .download-btn .btn {
-    padding: 15px 50px;
+.download-btn .btn {
+    padding: 10px 50px;
     border-radius: 20px;
     border: none;
     background-color: #00bfb9;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
     outline: none;
     text-decoration: none;

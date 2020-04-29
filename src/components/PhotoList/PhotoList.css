@@ -2,46 +2,46 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
 }
 
-.photo-list .photo-list-item {
+.photo__item {
     height: 200px;
-    width: 295px;
+    width: 300px;
     position: relative;
     border-radius: 10px;
     background-color: #fff;
     cursor: pointer;
     color: #fff;
     margin-top: 20px;
-    margin-right: 20px;
     animation-name: animate;
     animation-duration: 2s;
     overflow: hidden;
     position: relative;
 }
-.photo-list .photo-list-item .thumb img {
+.__thumb img {
     height: 100%;
     width: 100%;
     position: absolute;
     object-fit: cover;
-}
-.photo-list-item .user-avtar {
+    } 
+.user {
     position: absolute;
     bottom: 20px;
     left: 20px;
     display: flex;
     align-items: center;
 }
-.photo-list-item .user-avtar .icon {
+.user__icon {
     height: 36px;
     width: 36px;
     margin-right: 10px;
 }
-.photo-list-item .user-avtar .user-desc {
+.user__desc {
     font-size: 12px;
     font-weight: 500;
 }
-.photo-list-item .user-avtar .user-desc .drkcolor {
+.user__desc--drkcolor {
     color: #00bfb9;
     margin-left: 2px;
     text-transform: capitalize;

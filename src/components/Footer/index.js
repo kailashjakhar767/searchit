@@ -7,18 +7,18 @@ export const Footer = (props) => {
     return (
         <footer className={"footer-wrapper " + newClass} style={{ ...props.style }}>
             <div className="footer-content">
-                <div className="logo-wrp">
+                <section className="logo-wrp">
                     <Logo />
-                </div>
-                <div>
-                    <div className="head-text"> Popular Searches </div>
+                </section>
+                <section>
+                    <div className="head-text">Popular Searches </div>
                     <div className="popular-search">
                         {["Dog", "Office", "Digital", "Cat", "Coffee", "Meeting", "Space", "World", "Cars", "Nature", "Wildlife", "Games", "Business", "Beach trip", "Holiday"].map((item, index) =>
-                            <div className="popular-item" key={index}>{item}</div>
+                            <div className="popular-item" key={item+index}>{item}</div>
                         )}
                     </div>
 
-                </div>
+                </section>
             </div>
         </footer>
     );

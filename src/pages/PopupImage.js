@@ -38,22 +38,22 @@ const PopupImage = (props) => {
     return (
         <div className="popup-wrapper">
             <div className="popup">
-                <div className="popup-close">
+                <div className="popup__close">
                     <CloseBtn onClick={() => history.push("/")} />
                 </div>
                 {state !== null ?
                     <Fragment>
-                        <div className="user-info">
-                            <div className="icon">
+                        <div className="userinfo">
+                            <div className="userinfo__icon">
                                 <UserIcon icon={state.user.profile_image.medium} />
                             </div>
-                            <div className="user-social">
-                                <div className="name">{state.user.first_name}</div>
-                                <div className="userid">@{state.user.username}</div>
+                            <div className="userinfo__social">
+                                <div className="social__name">{state.user.first_name}</div>
+                                <div className="social__userid">@{state.user.username}</div>
                             </div>
                         </div>
-                        <div className="image-preview">
-                            <img src={state.urls.regular} alt={state.alt_description} />
+                        <div className="preview">
+                            <img className="preview__img" src={state.urls.regular} alt={state.alt_description} />
                         </div>
                         <div className="download-btn">
                             <div className="btn" onClick={()=>props.onDownloadClick(state.urls.regular)}>Download</div>
