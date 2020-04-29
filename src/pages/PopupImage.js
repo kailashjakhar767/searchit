@@ -20,6 +20,7 @@ const PopupImage = (props) => {
         if (state === null) {
             const result = getPhotoById(photoid, axiosSource.token);
             result.then(res => {
+                console.log(res.data);
                 setstate(res.data);
             }).catch(error => {
                 if (Axios.isCancel(error)) {
@@ -34,7 +35,7 @@ const PopupImage = (props) => {
             axiosSource.cancel();
         }
     }, [photoid, state])
-
+    console.log(state);
     return (
         <div className="popup-wrapper">
             <div className="popup">

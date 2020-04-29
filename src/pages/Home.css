@@ -16,16 +16,17 @@
 }
 
 .header .title--big {
-    font-size: 35px;
+    font-size: 39px;
     font-weight: 600;
 }
 .header .title--small {
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 0.6px;
 }
 
 .header .title--margin {
-    margin: 25px 0px;
+    margin: 15px 0px 30px;
 }
 .searchtag {
     display: flex;
@@ -42,12 +43,16 @@
     font-weight: 500;
     font-size: 14px;
 }
+.search__tag .tag {
+    margin-left: 27px;
+    text-shadow: 0 0 #ffb000;
+}
 
 .searchbar {
     margin-top: 30px;
 }
 .main-content-wrapper .photo-list-wrapper {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .main-content-wrapper .load-more-btn {

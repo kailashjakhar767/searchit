@@ -1,5 +1,6 @@
 import React from 'react'
 import './Elements.css';
+import { Link } from 'react-router-dom';
 
 export const Logo = () => {
     return(
@@ -22,7 +23,7 @@ export const Banner = (props) => {
 export const Tag = (props) => {
     let newClass = props.className ? props.className : "";
     return (
-    <label className={"tag "+newClass} style={{ ...props.style }}>{props.content}</label>
+    <Link to={"#"+props.content} className={"tag "+newClass} style={{ ...props.style }}>{props.content}</Link>
     )
 }
 
