@@ -7,7 +7,7 @@
 
 .photo__item {
     height: 200px;
-    width: 300px;
+    width: 302px;
     position: relative;
     border-radius: 10px;
     background-color: #fff;
@@ -42,7 +42,7 @@
     font-weight: 500;
 }
 .user__desc--drkcolor {
-    color: #00bfb9;
+    color: #00e2bd;
     margin-left: 2px;
     text-transform: capitalize;
 }
