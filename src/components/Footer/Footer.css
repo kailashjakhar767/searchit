@@ -1,13 +1,13 @@
 .footer-wrapper {
     background-color: #1a1d24;
-    /* width: 100%; */
-    padding: 70px;
+    width: 100%;
+    padding: 70px 0px;
 }
 
 .footer-wrapper .footer-content  {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 90%;
     margin: auto;
     max-width: 950px;
 }
