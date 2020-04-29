@@ -35,7 +35,6 @@ const PopupImage = (props) => {
             axiosSource.cancel();
         }
     }, [photoid, state])
-    console.log(state);
     return (
         <div className="popup-wrapper">
             <div className="popup">
